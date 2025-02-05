@@ -1,8 +1,13 @@
 package model;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
 
-
+@Component
+@Scope("prototype")
 public class Student {
 	
 	public int getId() {
@@ -31,13 +36,8 @@ public class Student {
 		this.name =name;
 		this.age =age;
 	}
+
 	public Student() {
 		
 	}
-	
-	
-	
-	
-	
-
 }
