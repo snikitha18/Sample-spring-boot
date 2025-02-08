@@ -1,4 +1,4 @@
-package controller;
+package com.springboot.SpringRest.controller;
 
 import java.util.List;
 
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import model.Student;
-import service.SudentService;
+import com.springboot.SpringRest.Model.Student;
+import com.springboot.SpringRest.service.SudentService;
 
 @RestController
 @ComponentScan(basePackageClasses = SudentService.class)
